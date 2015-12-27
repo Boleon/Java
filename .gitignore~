@@ -1,7 +1,0 @@
-~
-*.class
-/out/
-/.classpath
-/.project
-/.settings/
-/target/
