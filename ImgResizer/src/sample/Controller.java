@@ -64,7 +64,7 @@ public class Controller implements Initializable {
     }
 
     public void handleSaveButton() throws IOException {
-        if (isNumeric(newWidth.getText()) && isNumeric(newHeight.getText()) && (!newWidth.getText().equals("0") && !newHeight.getText().equals("0")) ) {
+        if (isNumeric(newWidth.getText()) && isNumeric(newHeight.getText()) && (Integer.valueOf(newWidth.getText()) != 0 && Integer.valueOf(newWidth.getText()) != 0) ) {
             try {
                 int scaledWidth = Integer.valueOf(newWidth.getText());
                 int scaledHeight = Integer.valueOf(newHeight.getText());
