@@ -22,7 +22,6 @@ public class Controller implements Initializable {
     public Button browseButton;
     public Button saveButton;
     public Label resultMessage;
-    public String formatName;
     public TextField newWidth;
     public TextField newHeight;
     public ImageView imageView;
@@ -30,6 +29,7 @@ public class Controller implements Initializable {
     private File file;
     private Graphics2D g2d;
     private Image image;
+    private String formatName;
     private String chooserPath;
     private String savePath;
 
@@ -64,7 +64,7 @@ public class Controller implements Initializable {
     }
 
     public void handleSaveButton() throws IOException {
-        if (isNumeric(newWidth.getText()) && isNumeric(newHeight.getText()) && (Integer.valueOf(newWidth.getText()) != 0 && Integer.valueOf(newWidth.getText()) != 0) ) {
+        if (isNumeric(newWidth.getText()) && isNumeric(newHeight.getText()) && (Integer.valueOf(newWidth.getText()) > 0 && Integer.valueOf(newWidth.getText()) > 0) ) {
             try {
                 int scaledWidth = Integer.valueOf(newWidth.getText());
                 int scaledHeight = Integer.valueOf(newHeight.getText());
