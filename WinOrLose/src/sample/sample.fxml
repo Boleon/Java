@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="45.0" layoutY="50.0" text="Balance:" />
+      <Label layoutX="45.0" layoutY="70.0" text="Bet:" />
+      <Label layoutX="45.0" layoutY="90.0" text="Number:" />
+      <Label fx:id="balance" layoutX="110.0" layoutY="50.0" text="20000" />
+      <Label fx:id="bet" layoutX="80.0" layoutY="70.0" text="0" />
+      <Label fx:id="number" layoutX="110.0" layoutY="90.0" text="0" />
+      <Label layoutX="255.0" layoutY="50.0" text="Bet:" />
+      <Label layoutX="255.0" layoutY="80.0" text="Number:" />
+      <TextField fx:id="betField" layoutX="290.0" layoutY="45.0" prefHeight="15.0" prefWidth="100.0" />
+      <TextField fx:id="numberField" layoutX="320.0" layoutY="75.0" prefHeight="15.0" prefWidth="70.0" />
+      <Button fx:id="startButton" layoutX="255.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleButtonClick" text="START" />
+      <Label fx:id="betStatus" layoutX="405.0" layoutY="50.0" />
+      <Label fx:id="numberStatus" layoutX="405.0" layoutY="80.0" />
+      <Label id="result" fx:id="result" layoutX="255.0" layoutY="150.0" textFill="#26a42a">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="statistic" editable="false" layoutX="14.0" layoutY="331.0" prefHeight="35.0" prefWidth="571.0" />
+      <Label layoutX="20.0" layoutY="315.0" text="Info:" />
+      <Button fx:id="restartButton" layoutX="325.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleRestartButtonClick" text="Restart" visible="false" />
+   </children>
+</Pane>

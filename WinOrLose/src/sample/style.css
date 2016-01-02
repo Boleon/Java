@@ -1,0 +1,27 @@
+#pane {
+    -fx-background-image: url("back.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: WHITE;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,1) , 0,0,0,1 );
+}
+
+#result {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: CYAN;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,1) , 0,0,0,1 );
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
